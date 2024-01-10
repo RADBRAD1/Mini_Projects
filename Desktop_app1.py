@@ -32,7 +32,7 @@ def window():
 
     btn_save = QtWidgets.QPushButton(win) #create a button
     btn_save.setText("Save") #given button text displaying "save"
-    btn_save.clicked.connect(clicked) #when we click the botton, we perform the task of the function also named "clicked"
+    btn_save.clicked.connect(clicked) #when we click the botton, we perform the task of the function also named
     btn_save.move(200,130)
 
     win.show() #show created desktop window
