@@ -4,7 +4,7 @@ from tkinter import ttk
 class App():
     def __init__(self):
         self.root = tk.Tk()
-        self.root.geomtry("350x200+4000+500")
+        self.root.geometry("350x200+300+500")
         self.root.title("Text app") #change window title
         self.mainframe = tk.Frame(self.root,background = "white")#specify parent of window
         self.mainframe.pack(fill = "both", expand = True) #frame spans across entire window
@@ -30,19 +30,21 @@ class App():
         return
     
     def set_text(self):
-        newtext = self.set_Text_field.get()#makes newtext the text user inputs
+        newtext = self.set_text_field.get()#makes newtext the text user inputs
         self.text.config(text = newtext) #changes the text to newtext
 
-    def set_color_button(self): 
+    def set_color(self): 
         newcolor = self.set_color_field.get()
         self.text.config(foreground = newcolor)
 
     def reverse(self):
         newtext = self.text.cget("text")
-        reverse = newtext[::-1]
+        reversed = newtext[::-1]
         self.text.config(text= reversed)
 
 
 
     #if __name__ == "__main__":
         #App()   --> but our file isnt called main. 
+
+App()
