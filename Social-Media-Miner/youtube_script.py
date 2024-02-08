@@ -72,3 +72,6 @@ with open("youtube_videos.csv", "w", encoding = "utf-8") as csv_file:
 #api providers build in ways to slow down data-grabbing process. youtube limits data we can request w/pagination, diving data into multiple json objects
       
   """
+
+# git rm --cached "30-seconds.txt"
+#git commit --amend, these two lines removed the specified file from the index, and updates the contents of the last commit. 
