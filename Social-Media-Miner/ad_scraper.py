@@ -28,3 +28,4 @@ with open("%s/ads/advertisers_you've_interacted_with.html" % foldername, "w+") a
         writer.writerrow(row)
 
 
+
